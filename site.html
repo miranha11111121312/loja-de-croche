@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miranha.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Modificado para alinhar no topo */
+            align-items: center;
+            padding-top: 40px; /* Margem superior para descer todo o conteúdo */
+        }
+        
+        header {
+            background-color: #362b9b;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        .image-container {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1a9e21;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 0,5px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .form-container {
+            margin-bottom: 40px;
+        }
+
+        form {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+        }
+
+        .input-wrapper {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site pra descobrir se é viado</h1>
+    </header>
+
+    <nav>
+        <a href="#bloco1">maykot viadinho da trindade so anda com menina de tromba, boquinha de tarrafear pinguelo</a>
+    </nav>
+
+    
+    <div class="container">
+
+      
+        <section id="bloco1" class="form-container">
+            <h2>Qual seu nome?</h2>
+            <p>Insira seu nome e sobrenome que eu te conto um segredo</p>
+            
+            <form action="#" method="post">
+                <div class="input-wrapper">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+            
+                <div class="input-wrapper">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                </div>
+            
+               
+                <a href="ixi%20é%20baitola.html"><button type="button">Confirmar</button></a>
+            </form>
+            
+        </section>
+
+       
+        <section id="bloco2">
+            <h2>Teste de baitolagem</h2>
+            <h3>qual você prefere</h3>
+
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOu45mENXOl4Sn8q3VFaUfr8acL7xfyfraJJEzvWe8Ntz-vjk5vZ0zgSGY1TVcyrV_Is&usqp=CAU.jpg" alt="Imagem 1">
+                <button onclick="alert('Macho alfa')">dodgao</button>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://gruposinal-prod.imgix.net/upload/2024/04/74e7e8e5-2a70-4fdc-9bf4-cbe6570a9816-mobi-like-10.png?auto=format&ixlib=react-9.8.1&w=600.jpg" alt="Imagem 2">
+                <button onclick="alert('Gazela saltitante')">mobi</button>
+            </div>
+              
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
