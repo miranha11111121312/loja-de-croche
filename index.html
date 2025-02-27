@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Crochê</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            background-color: #7ae0ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2, h3 {
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-container label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="number"],
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #ff4b3a;
+        }
+
+        .product-images {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-images div {
+            flex: 1;
+            max-width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-images div:hover {
+            transform: scale(1.05);
+        }
+
+        .product-images img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja de Crochê da Bruna</h1>
+    </header>
+
+    <nav>
+        <a href="#bloco1">Contato</a>
+        <a href="#bloco2">Produtos</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="bloco1" class="form-container">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato com nossa loja de crochê.</p>
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade">
+
+                <label for="produto">Produto de Interesse:</label>
+                <select id="produto" name="produto">
+                    <option value="cachecol">Cachecol de Crochê</option>
+                    <option value="almofada">Almofada de Crochê</option>
+                    <option value="roupinha">Roupinha para Pets</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <section id="bloco2">
+            <h2>Nossos Produtos de Crochê</h2>
+            <p>Confira os lindos produtos feitos à mão com muito carinho. Abaixo estão algumas imagens dos nossos produtos.</p>
+
+            <div class="product-images">
+                <div>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_856997-MLB42106495779_062020-O.webp.jpg" alt="Produto 1">
+                    <p>Cachecol de Crochê</p>
+                </div>
+                <div>
+                    <img src="https://grazielaguimaraes.com.br/wp-content/uploads/2018/10/baixa_foto_0059.jpg" alt="Produto 2">
+                    <p>Almofada de Crochê</p>
+                </div>
+                <div>
+                    <img src="https://www.circulo.com.br/storage/receitas/62a7998e0dba681247462a7998e0dbaf.jpg" alt="Produto 3">
+                    <p>Roupinha para Pets</p>
+                </div>
+            </div>
+
+            <h3>Veja o Processo de Criação do Crochê</h3>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/1L84KR--QFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </video>
+
+            <h3>Escute uma Música Relaxante Enquanto Explora</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Loja de Crochê da Bruna. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
